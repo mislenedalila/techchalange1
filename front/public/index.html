@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de Plano de Saúde</title>
+</head>
+<body>
+  <h1>Simulador de Plano de Saúde</h1>
+
+ <form id="predict-form" method="POST" action="#">
+    <label>Idade: <input type="number" name="age" required></label><br>
+    <label>Sexo:
+      <select name="sex">
+        <option value="0">Feminino</option>
+        <option value="1">Masculino</option>
+      </select>
+    </label><br>
+    <label>IMC: <input type="number" step="0.1" name="bmi" required></label><br>
+    <label>Filhos: <input type="number" name="children" required></label><br>
+    <label>Fumante:
+      <select name="smoker">
+        <option value="0">Não</option>
+        <option value="1">Sim</option>
+      </select>
+    </label><br>
+    <label>Região:
+      <select name="region">
+        <option value="northeast">Northeast</option>
+        <option value="northwest">Northwest</option>
+        <option value="southeast">Southeast</option>
+        <option value="southwest">Southwest</option>
+      </select>
+    </label><br><br>
+    <button type="submit">Calcular</button>
+  </form>
+
+  <h2 id="resultado"></h2>
+
+  <script>
+    document.getElementById('predict-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const form = new FormData(this);
+      const region = form.get('region');
+
+      const regionData = {
+        region_northwest: region === 'northwest' ? 1 : 0,
+        region_southeast: region === 'southeast' ? 1 : 0,
+        region_southwest: region === 'southwest' ? 1 : 0
+      };
+
+      const body = {
+        age: parseInt(form.get('age')),
+        sex: parseInt(form.get('sex')),
+        bmi: parseFloat(form.get('bmi')),
+        children: parseInt(form.get('children')),
+        smoker: parseInt(form.get('smoker')),
+        ...regionData
+      };
+
+      const res = await fetch('http://localhost:5000/predict', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+
+      const data = await res.json();
+      document.getElementById('resultado').innerText =
+        `Custo estimado: R$ ${data.previsao_custo}`;
+    });
+  </script>
+</body>
+</html>
