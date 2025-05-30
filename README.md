@@ -3,9 +3,13 @@ Curso de Pós-Graduação IA para DEV
 
 Grupo:
 Bruno Lima da Cruz
+
 Fernando Fernandes Costa
+
 Matheus Braz Giudice dos Santos
+
 Mislene Dalila da Silva
+
 WELLINGTON CICERO DE CARVALHO 
 
 
