@@ -9,7 +9,7 @@ Este repositório contém uma aplicação desenvolvida para estimar os **custos 
 - Fernando Fernandes Costa
 - Matheus Braz Giudice dos Santos
 - Mislene Dalila da Silva
-- WELLINGTON CICERO DE CARVALHO 
+- Wellington Cicero de Carvalho
 
 
 ## Sobre o Projeto
