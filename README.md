@@ -1,6 +1,8 @@
 # Tech Challenge 1 - Estimativa de Custos Médicos (FIAP)
 Curso de Pós-Graduação IA para DEV
 
+Este repositório contém uma aplicação desenvolvida para estimar os **custos médicos individuais** com base em características pessoais, utilizando um modelo preditivo treinado com **XGBoost**.
+
 
 **Grupo:**
 - Bruno Lima da Cruz
@@ -9,8 +11,6 @@ Curso de Pós-Graduação IA para DEV
 - Mislene Dalila da Silva
 - WELLINGTON CICERO DE CARVALHO 
 
-
-Este repositório contém uma aplicação desenvolvida para estimar os **custos médicos individuais** com base em características pessoais, utilizando um modelo preditivo treinado com **XGBoost**.
 
 ## Sobre o Projeto
 
