@@ -1,16 +1,13 @@
 # Tech Challenge 1 - Estimativa de Custos Médicos (FIAP)
 Curso de Pós-Graduação IA para DEV
 
-Grupo:
-Bruno Lima da Cruz
 
-Fernando Fernandes Costa
-
-Matheus Braz Giudice dos Santos
-
-Mislene Dalila da Silva
-
-WELLINGTON CICERO DE CARVALHO 
+**Grupo:**
+- Bruno Lima da Cruz
+- Fernando Fernandes Costa
+- Matheus Braz Giudice dos Santos
+- Mislene Dalila da Silva
+- WELLINGTON CICERO DE CARVALHO 
 
 
 Este repositório contém uma aplicação desenvolvida para estimar os **custos médicos individuais** com base em características pessoais, utilizando um modelo preditivo treinado com **XGBoost**.
