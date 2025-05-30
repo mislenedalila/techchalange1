@@ -47,4 +47,8 @@ A interface web permite que o usuário insira os parâmetros e visualize a **pre
 - HTML + CSS + JS (interface frontend)
 
 ## Estrutura do Repositório
-
+techchalange1/
+├── app/ # API Flask
+├── frontend/ # Interface HTML/CSS/JS
+├── modelo_xgboost.pkl
+└── README.md
